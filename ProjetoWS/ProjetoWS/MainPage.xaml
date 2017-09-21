@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ProjetoWS"
+             x:Class="ProjetoWS.MainPage">
+
+    <StackLayout>
+
+        <ActivityIndicator 
+            x:Name="atividade"
+            IsVisible="False"
+            Color="Black"/>
+        <Label Text="Buscador de Endereço" 
+           VerticalOptions="Center" 
+           HorizontalOptions="Center" />
+
+        <Entry x:Name="txtCep" Placeholder="Digite o CEP" Keyboard="Numeric"/>
+
+        <Button Text="Buscar" Clicked="Button_Clicked" />
+
+
+        <Label x:Name="lblCep"/>
+        <Label x:Name="lblEndereco"/>
+        <Label x:Name="lblComplemento"/>
+        <Label x:Name="lblBairro"/>
+        <Label x:Name="lblCidade"/>
+        <Label x:Name="lblUf"/>
+
+
+
+    </StackLayout>
+
+</ContentPage>
